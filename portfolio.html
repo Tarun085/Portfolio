@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/portfoliocss.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Tarun Tiwari</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Tarun Tiwari</span><br></h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVY3efFyktSBShjhBcNUt2JuH3F1r0qnlt1g&usqp=CAU"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Tarun Tiwari</h2>
+                        <p class="about__text">student of Chitkara University.Currently,I am learning HTML,CSS,JS and C++.I want to enhance my knowledge in programming.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle"> </h2>
+                        <p class="skills__text"></p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">30%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">C++</span>
+                            </div>
+                            <div class="skills__bar skills__cpp">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRTcE3IUoNCnfve6r3RJbXo0QLeIGaMcZDA&usqp=CAU" alt="" class="skills__img" width="800vw">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+                <ul style="text-align :center">
+                    <li><b>Digital Marketing Website</b></li>
+                    <li><b>Online Banking System</b></li>
+                </ul>
+                
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Submit" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Tarun Tiwari</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Mycode. All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="javascript/portfoliojs.js"></script>
+    </body>
+</html>
